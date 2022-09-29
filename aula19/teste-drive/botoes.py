@@ -19,10 +19,17 @@ def acao_botao():
 
 ttk.Button(
     base,
-    text='olá mundo',
+    text='login',
     bootstyle='danger',
     command = acao_botao
     ).pack(side=LEFT, padx=15,pady=15)
+#Criando um Segundo botão
+ttk.Button(
+    base,
+    text='Segundo botão',
+    bootstyle=('warning','outline'),
+    command = acao_botao
+    ).pack(side=LEFT, padx=40,pady=30)
 
 #Ponto de entrada da Interface
 
