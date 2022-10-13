@@ -1,5 +1,23 @@
-.stButton > button {
-    background-color: #8BD5C6;
-    border-radius: 16px;
-    align: center;
+
+
+ .stButton > button {
+  background-color: #55998f;
+  border-radius: 232px;
+  box-align: center;
+  width: 10em;
+ }
+ 
+ .stMarkdown {
+  text-align: center;
+  
+ }
+ 
+
+div[data-testid="stHorizontalBlock"] > div:first-of-type {
+  background-color: #63C7B2;
+  border-radius: 16px;
+  border: 1px solid #63C7B2;
+  
 }
+
+

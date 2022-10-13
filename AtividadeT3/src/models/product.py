@@ -1,4 +1,5 @@
-from unicodedata import name
+
+import streamlit as st
 
 
 class Product():
@@ -7,5 +8,14 @@ class Product():
          self.price = price
          self.url = url
          
+    def get_name(self):
+        return self._name
+    
+    def get_name(self):
+        return self._price
+    
+    def get_name(self):
+        return self._url
+      
     def __str__(self) -> str:
         return("Product(name:{name}, prince:{price}, url:{url})")

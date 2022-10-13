@@ -1,1 +1,0 @@
-##criar uma aplicação para lidar com esses caras(controllers/product and user)
