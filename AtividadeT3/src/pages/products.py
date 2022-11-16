@@ -1,7 +1,7 @@
 from cProfile import label
 from turtle import onclick
 import streamlit as st
-with open('src/style2.css') as f:
+with open('style2.css') as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     
 

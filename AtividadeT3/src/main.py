@@ -1,9 +1,15 @@
-from calendar import c
 import streamlit as st 
 import pandas as pd
+from dao.product import ProductDAO
+
+items = ProductDAO.get_instance().get_all()
+
+print(items)
+for Product in items:
+    print(Product)
 
  
-with open('src/style3.css') as f:
+with open('style3.css') as f:
   st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     
 
@@ -18,6 +24,6 @@ with col2:
     st.image('https://i.imgur.com/n8tWqv8.png')
     
 with st.expander("Locations"): 
-    locations = pd.read_csv("./src/data/Locations2.csv")
+    locations = pd.read_csv("./data/Locations2.csv")
     options = st.multiselect(label="Select a Region", options=locations['Region'].unique(), default=locations['Region'].unique())
     st.dataframe(locations.query(f"Region in {options}"))

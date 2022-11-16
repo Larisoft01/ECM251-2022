@@ -1,4 +1,3 @@
-from this import d
 
 
 class User():
@@ -11,13 +10,15 @@ class User():
         
         return self.name
     
-    def get_email(self):
-        
-        return self.email
+    
     
     def get_password(self):
         
         return self.password
+    
+    def get_email(self):
+        
+        return self.email
     
     def verify_password(self, password):
         
